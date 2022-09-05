@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook</title>
+</head>
+
+<body>
+<!--Formualare-->
+<form>
+    <label>Name:</label> <!--Welche Eingabe gemacht werden soll-->
+    <input type="text"> <!--Textfeld-->
+    <input type="submit"> <!--Buttons-->
+</form>
+<br>
+<form action="">
+    <label for="">Want to sign up for email?</label>
+    <input type="checkbox">
+</form>
+<br>
+
+<!--Newsletter abonnieren-->
+<form action="" method="get" class="form-example">
+    <div class="form-example">
+      <label for="name">Enter your name: </label>
+      <input type="text" name="name" id="name" required>
+    </div>
+    <div class="form-example">
+      <label for="email">Enter your email: </label>
+      <input type="email" name="email" id="email" required>
+    </div>
+    <div class="form-example">
+      <input type="submit" value="Subscribe!">
+    </div>
+  </form>
+  <br>
+
+<!--Begrenzte Zahl an Buchstaben-->
+<form action="">
+  <label for="name">Name (4 to 8 characters):</label>
+  <input type="text" id="name" name="name" requiredminlength="4" maxlength="8" size="10">
+</form>
+<br>
+
+<!--Mehrere Checkboxes-->
+<form action="">
+    <label for="">Welche Eigenschaften hat Ihr Hund?</label>
+    <br>
+    <input type="checkbox" id="sportlich" name="sportlich">
+    <label for="sportlich">Sportlich</label>
+    <br>
+    <input type="checkbox" id="verschmust" name="verschmust">
+    <label for="verschmust">Verschmust</label>
+    <br>
+    <input type="checkbox" id="verspielt" name="verspielt">
+    <label for="verspielt">Verspielt</label>
+</form>
+<br>
+
+<!--Schieberegler-->
+<form action="">
+    <p>Wie charakterisieren Sie Ihren Hund?</p>
+    <div>
+        <input type="range" name="verfressen" id="verfressen" min="wenig" max="sehr">
+        <label for="verfressen">Verfressenheit</label>
+    </div>
+    <div>
+        <input type="range" name="verschmust" id="verschmust" min="wenig" max="sehr">
+        <label for="verschmust">Verschmustheit</label>
+    </div>
+    <div>
+        <input type="range" name="frech" id="frech" min="wenig" max="sehr">
+        <label for="frech">Frechheit</label>
+    </div>    
+</form>
+<br>
+
+<!--Datum-->
+<form action="">
+    <label for="geburtsdatum">Ihr Geburtsdatum</label>
+    <input type="date" name="geburtsdatum" id="geburtsdatum">
+</form>
+<br>
+</body>
