@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+  </head>
+  
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">You have got a dog or a cat? You want to profit from discounts and interesting news about pets? Register now and tell us more about your beloved pet.</p>
+    
+    <form id="survey-form">
+      
+      <fieldset>
+        <label>Let us know who you are...</label>
+        <label for="name" id="name-label">Your Name: <input id="name" type="text" placeholder="Marixa Musterfrau" required/></label>
+        <label for="pet" id="pet-label">Your Pets Name: <input id="pet" type="text" placeholder="Luna" required/></label>
+        <label for="email" id="email-label">Your Email: <input id="email" type="email" placeholder="email@mail.com" required/></label>
+        <label for="number" id="number-label">How old is your pet? <input id="number" type="number" min="0" max="99" placeholder="age" required /></label>
+      </fieldset>
+      
+      <fieldset>
+      <label>Where is your pet from?</label>
+      <select id="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Breeder</option>
+            <option value="2">Animal Shelter</option>
+            <option value="4">Other</option>
+      </select>
+      </fieldset>
+
+      <fieldset>
+        <label>What kind of animal is/are your pet(s)?</label>
+        <label for="dog"><input id="dog" type="checkbox" name="Pet" class="inline" value="Dog"/>Dog</label>
+        <label for="cat"><input id="cat" type="checkbox" name="Pet" class="inline" value="Cat"/>Cat</label>
+      </fieldset>
+
+      <fieldset>
+        <label>Is it a boy or a girl?</label>
+        <label for="boy"><input id="boy" type="radio" value="Boy" name="Pet" class="inline" value="Boy"/>"Boy"</label>
+        <label for="girs"><input id="girl" type="radio" value="Girl" name="Pet" class="inline" value="Girl"/>"Girl"</label>
+      </fieldset>
+
+    <fieldset>
+      <label>What is your pets character like?</label>
+      <input type="range" id="sportlich" name="sportlich" value="Sportlich" class="range">
+      <label class="range" for="sportlich">sportive</label>
+      <input type="range" id="verschmust" name="verschmust" value="Verschmust" class="range">
+      <label class="range" for="verschmust">likes to eat</label>
+      <input type="range" id="verspielt" name="verspielt" value="Verspielt" class="range">
+      <label class="range" for="verspielt">likes to sleep</label>
+    </fieldset>
+
+   <fieldset>
+      <label>What is the funniest thing your pet ever did?</label>
+      <textarea id="funny" name="funny" rows="3" cols="30" placeholder="The funniest thing my pet ever did, was ..."></textarea>
+    </fieldset>
+    <fieldset>
+    <label for="terms-and-conditions" name="terms-and-conditions">
+          <input id="terms-and-conditions" type="checkbox" value="Accepted" required name="terms-and-conditions" class="inline" /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+        </label>
+      <input id="submit" type="submit" value="Submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>
